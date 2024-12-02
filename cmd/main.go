@@ -14,7 +14,7 @@ func main() {
 
 	// config CORS
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"https://cooking-recipe-frontend-o655sed54.vercel.app/"},
+		AllowOrigins:     []string{"*"},
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Accept", "Authorization"},
 		ExposeHeaders:    []string{"Content-Length"},
